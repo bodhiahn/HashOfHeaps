@@ -1,0 +1,8 @@
+CXX = g++
+CXXFLAGS = -Wall
+
+test: car.h hash.h heap.h driver.cpp
+	$(CXX) $(CXXFLAGS) car.h hash.h heap.h driver.cpp -o mytest
+
+run:
+	./mytest
